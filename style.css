@@ -219,7 +219,7 @@ footer {
     line-height: 3vh;
   }
   .partner {
-    padding-top: 3vh;
+    padding-top: 6vh;
   }
   label ~ input {
     width: 80vw;
@@ -228,6 +228,7 @@ footer {
     margin-left: 12vw;
   }
   footer {
+    margin-bottom: -7vh;
     bottom: 1vh;
     left: 25vw;
     text-align: center;
