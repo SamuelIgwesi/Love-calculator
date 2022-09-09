@@ -204,3 +204,23 @@ footer {
     margin-left: 17vw;
   }
 }
+@media screen and (max-width: 360px) {
+  .heading h1 {
+    font-size: 7vw;
+  }
+  .heading i {
+    font-size: small;
+  }
+  .inputs {
+    display: block;
+  }
+  .partner {
+    padding-top: 3vh;
+  }
+  label ~ input {
+    width: 80vw;
+  }
+  button {
+    margin-left: 12vw;
+  }
+}
