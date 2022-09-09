@@ -205,6 +205,9 @@ footer {
   }
 }
 @media screen and (max-width: 360px) {
+   body {
+    margin-top: 5vh;
+  }
   .heading h1 {
     font-size: 7vw;
   }
@@ -213,6 +216,7 @@ footer {
   }
   .inputs {
     display: block;
+    line-height: 3vh;
   }
   .partner {
     padding-top: 3vh;
@@ -222,5 +226,10 @@ footer {
   }
   button {
     margin-left: 12vw;
+  }
+  footer {
+    bottom: 1vh;
+    left: 25vw;
+    text-align: center;
   }
 }
