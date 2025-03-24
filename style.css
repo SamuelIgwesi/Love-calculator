@@ -1,236 +1,74 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: darkmagenta;
-}
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body {
-  padding-top: 25px;
-  text-align: center;
-  color: #fff;
-  font-family: "Montserrat-bold", sans-serif;
-}
-.heading h1 {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 45px;
-}
-/* Love score */
-.love-score {
-  text-align: center;
-  position: relative;
-  font-size: 5vw;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-/* Form */
-.inputs {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-top: 45px auto;
-  line-height: 25px;
-  font-size: large;
-  position: relative;
-}
-#input {
-  padding: 5px;
-  border: 2px solid black;
-  background-color: #4cffe3;
-  border-radius: 5px;
-}
-select {
-  background-color: #4cffe3;
-  font-size: medium;
-  font-weight: 400;
-}
-option {
-  color: yellow;
-}
-.questions {
-  margin-top: 20px;
-  margin-left: 24vw;
-  text-align: left;
-  position: relative;
-}
-.questions div {
-  padding-bottom: 20px;
-}
-.questions select {
-  width: 52vw;
-}
-button {
-  padding: 10px 20px;
-  background-color: red;
-  color: #fff;
-  border-radius: 30px;
-  position: relative;
-  margin-top: 3%;
-  margin-left: 24%;
-  width: 200px;
-  font-size: larger;
-  cursor: pointer;
-}
-footer {
-  position: absolute;
-  bottom: 1vh;
-  left: 2vh;
-  font-size: smaller;
-  font-weight: 600;
-}
-/* Media Queries */
-
-@media screen and (min-width: 600px) {
-  .heading h1 {
-    font-size: 40px;
-  }
-  .questions {
-    margin-left: 14vw;
-  }
-  .questions select {
-    width: 72vw;
-  }
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media screen and (min-width: 800px) {
-  .questions {
-    margin-left: 19vw;
-  }
-  .questions select {
-    width: 62vw;
-  }
-}
-@media screen and (max-width: 920px) {
-  body {
-    margin-top: 70px;
-  }
-  .heading h1 {
-    font-size: 55px;
-    margin-bottom: 10px;
-  }
-  .heading i {
-    font-size: 25px;
-  }
-  .love-score {
-    font-size: 70px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-  }
-  .inputs {
-    line-height: 35px;
-    margin-bottom: 5vh;
-  }
-  .questions {
-    margin-left: 21vw;
-  }
-  .questions select {
-    width: 58vw;
-  }
-  .questions div {
-    padding-bottom: 50px;
-  }
-}
-
-@media screen and (max-width: 725px) {
-  .heading h1 {
-    font-size: 45px;
-  }
-  .heading i {
-    font-size: larger;
-  }
-  .questions {
-    margin-left: 17vw;
-  }
-  .questions select {
-    width: 66vw;
-  }
-}
-@media screen and (min-width: 726px) {
-  .heading h1 {
-    font-size: 10vw;
-  }
-  .questions {
-    margin-left: 17vw;
-  }
-  .questions select {
-    width: 66vw;
-  }
-}
-
-@media screen and (max-width: 593px) {
-  .heading h1 {
-    font-size: 38px;
-  }
-  .questions {
-    margin-left: 14vw;
-  }
-  .questions select {
-    width: 72vw;
-  }
-}
-@media screen and (max-width: 501px) {
-  .heading h1 {
-    font-size: 35px;
-  }
-  .heading i {
-    font-size: 18px;
-  }
-  .questions {
-    margin-left: 10vw;
-  }
-  .questions select {
-    width: 80vw;
-  }
-}
-@media screen and (min-width: 1000px) {
-  body {
-    padding-top: 40px;
-  }
-  .heading h1 {
-    font-size: 45px;
-  }
-  .inputs {
-    line-height: 28px;
-  }
-  .questions {
-    margin-top: 20px;
-    margin-left: 24vw;
-    text-align: left;
-    position: relative;
-  }
-  .questions select {
-    width: 52vw;
-  }
-  button {
-    margin-left: 17vw;
-  }
-}
-@media screen and (max-width: 360px) {
-   body {
-    margin-top: 5vh;
-  }
-  .heading h1 {
-    font-size: 7vw;
-  }
-  .heading i {
-    font-size: small;
-  }
-  .inputs {
-    display: block;
-    line-height: 3vh;
-  }
-  .partner {
-    margin-top: 3vh;
-  }
-  label ~ input {
-    width: 80vw;
-  }
-  button {
-    margin-left: 12vw;
-  }
-  footer {
-    margin-bottom: -15vh;
-    bottom: 1vh;
-    left: 25vw;
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     text-align: center;
-  }
+    max-width: 90%;
+    width: 320px;
+    margin: 20px auto;
+}
+
+h1 {
+    color: #ff6b81;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #ff6b81;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #ff4757;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Responsive tweaks */
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 20px;
+    }
 }
